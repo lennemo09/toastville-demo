@@ -5,6 +5,7 @@ using UnityEngine;
 public class AreaEntrance : MonoBehaviour
 {
     public string currentAreaName;
+
     // Start is called before the first frame update
     void Start()
     {
