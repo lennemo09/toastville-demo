@@ -12,8 +12,10 @@ public class CameraController : MonoBehaviour
         target = PlayerController.instance.transform;
     }
 
-    // Update is called once per frame
-    void Update()
+    // Update is called once per frame after Update()
+    // This is to avoid camera lag while tracking target 
+    // (when player physics is updated after camera movement)
+    void LateUpdate()
     {
         // Set new Camera position (x,y,z) to (target's x, target's y, current z).
         // Can change current z to accomodate dynamic camera height e.g. fixed distance from player's Z.
