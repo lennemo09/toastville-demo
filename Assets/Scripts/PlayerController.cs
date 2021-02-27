@@ -10,7 +10,8 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
 
     public static PlayerController instance;
-    public string areaTransitionName;
+    public string previousAreaName;
+    public string currentAreaName;
     
     // Start is called before the first frame update
     void Start()
